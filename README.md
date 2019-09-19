@@ -1,5 +1,5 @@
 请按照以下步骤操作：
-1. 注册 github.com 帐号 —— 无论如何你都必须有 github 账户；
+1. 注册 github.com 帐号；
 2. 使用浏览器访问 https://github.com/iemacs/weekly-report/ ，在页面右上部找到 “Fork” 按钮，将该仓库 Fork 到你自己的账户中；
 3. 在自己账户中设置 weekly-report 为私有仓库，并添加共同编辑人 iemacs；
 4. 使用 git clone 命令或者使用 Desktop for Github 将 weekly report 这个你 Fork 过来的仓库克隆到本地；
