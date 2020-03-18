@@ -1,0 +1,6 @@
+* [2020-03-18 Wed]
+** Weekly report in GitHub
+1. Magit
+** Master thesis
+参考刘闽建的硕士论文
+** 王翔宇 工科学术论文写作技巧指导
