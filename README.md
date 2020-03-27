@@ -4,3 +4,9 @@
 3. 在自己账户中设置 weekly-report 为私有仓库，并添加共同编辑人 iemacs；
 4. 使用 git clone 命令或者使用 Desktop for Github 将 weekly report 这个你 Fork 过来的仓库克隆到本地；
 5. 随时将当前的研究工作整理到 weekly.org 中（已每周周五为节点），并通过 git commit 命令向你自己 Fork 过来的仓库提交变化。
+
+目录中文档的说明
+-   **weekly.org:** 用于撰写周报
+-   **reading.org:** 用于记录文献阅读
+-   **simulation.org:** 用于记录试验
+-   **thesis.org:** 用于撰写毕业论文
