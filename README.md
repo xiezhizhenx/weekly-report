@@ -6,7 +6,7 @@
 5. 随时将当前的研究工作整理到 weekly.org 中（已每周周五为节点），并通过 git commit 命令向你自己 Fork 过来的仓库提交变化。
 
 目录中文档的说明
--   **weekly.org:** 用于撰写周报
--   **reading.org:** 用于记录文献阅读
--   **simulation.org:** 用于记录试验
--   **thesis.org:** 用于撰写毕业论文
+- **[周报](weekly.org):** 用于撰写周报
+- **[文献阅读](reading.org):** 用于记录文献阅读
+- **[试验](simulation.org):** 用于记录试验
+- **[硕士论文](thesis.org):** 用于撰写毕业论文
