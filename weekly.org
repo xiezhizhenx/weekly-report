@@ -1,3 +1,5 @@
+* [2020-09-25 ÷‹ŒÂ]
+.....
 * [2019-09-06 Fri]
 ** Done
 1. Read "The Promise of Artificial Intelligence in Chemical Engineering: Is It Here, Finally?".
