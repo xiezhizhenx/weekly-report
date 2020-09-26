@@ -1,6 +1,12 @@
-* [2020-09-25 ����]
-.....
-///
+* [2020-09-25 Fri]
+** Done
+1. 阅读《基于特征传播的髙速视頻中物体检测》、《基于特征融合的高准确率视频中物体检测》、《基于递归特征融合与自适应特征提取的高速高准确率视频中物体检测》
+2. 阅读《Deep Feature Flow for Vedio Recognition》, 《Flow-Guided Feature Aggregation for Vedio Object Detection》, 《An Empirical Study of Spatial Attention Mechanisms in Deep Networks》, 《Towards High Performance Vedio Object Detection》
+** Question
+1. 所看文章的方法中所用方法（语义分割及目标检测）运用到课题里较为困难
+** Plan
+1. 阅读检测图像/视频中物体速度的文献
+2. 阅读检测图像/视频前后帧相似点的文献
 * [2019-09-06 Fri]
 ** Done
 1. Read "The Promise of Artificial Intelligence in Chemical Engineering: Is It Here, Finally?".
