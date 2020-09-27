@@ -9,5 +9,5 @@
 - **[周报](weekly.org):** 用于撰写周报
 - **[文献阅读](reading.org):** 用于记录文献阅读
 - **[试验](simulation.org):** 用于记录试验
-- **[开题报告](opening_report.txt):** 用于撰写开题报告
+- **[开题报告](opening_report.org):** 用于撰写开题报告
 - **[硕士论文](thesis.org):** 用于撰写毕业论文
