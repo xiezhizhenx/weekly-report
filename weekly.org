@@ -1,3 +1,20 @@
+* <2020-10-16 周五>
+** Done
+1. 找计算相似点的代码，并运行例子
+2. 阅读《Optical Flow Estimation for Flame Detection in Videos》、《Dynamic Feature-based Fire Detection Using Fusion of Markov Random Field and PCA Optical Flow》、《基于光流动态特征与 SVM 的阴燃火检测方法》、《FIRE AND SMOKE DETECTION IN VIDEO WITH OPTIMAL MASS TRANSPORT BASED OPTICAL FLOW AND NEURAL NETWORKS》、《基于光流法火灾烟雾视频图像识别及多信息融合探测算法研究》
+** question
+1. 所找计算相似点的示例为计算前后图片的相似性，不符合课题设想中计算图片相似点的应用想法
+2. 阅读文章中没有解决类似问题的文章
+** Plan
+1. 找图片拼接的示例
+2. 找所阅读文章中的开源代码
+* <2020-10-09 周五>
+** Done
+1. 提交开题报告
+** Question
+1. 具体方法未确定
+** Plan
+1. 尽快确定具体方法
 * [2020-09-25 Fri]
 ** Done
 1. 阅读《基于特征传播的髙速视頻中物体检测》、《基于特征融合的高准确率视频中物体检测》、《基于递归特征融合与自适应特征提取的高速高准确率视频中物体检测》
@@ -16,3 +33,4 @@
 ** Plan
 1. Commit the patent about combustion steady estimation.
 2. Check combustion steady monitoring function.
+   
