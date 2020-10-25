@@ -1,3 +1,15 @@
+* <2020-10-23 周五>
+** Done
+1. 阅读《Real-Time Fire Detection Based On Deep Convolutional Long-Recurrent Networks And Optical Flow Method》、《Optical Flow Feature Based for Fire Detection on Video Data》、《高炉内煤粉燃烧速度场的数值模》、《混煤燃烧特性研究及燃烧速度预测》。
+2. 找图片拼接的示例，示例所用为SIFT算法和FLANN函数库。
+** Question
+1. 阅读文章中没用利用光流法提取图像相似点从而计算扩散速度的应用。
+2. 运行示例代时，错误提示为 ModuleNotFoundError: No module named 'cv2' ，经检查已安装OpenCV和OpenCV-python模块，仍提示相同错误类型，故未能跑通示例代码。
+** Plan
+1. 找SIFT算法示例并跑通。
+2. 截取视频数据的火焰图像。
+3. 修改开题报告中课题研究内容、研究方案及难点、预期成果和可能的创新点，使其更加详细。
+4. 写文献综述。
 * <2020-10-16 周五>
 ** Done
 1. 找计算相似点的代码，并运行例子
