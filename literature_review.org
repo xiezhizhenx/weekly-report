@@ -1,0 +1,98 @@
+* 摘要
+燃烧火焰是表征燃烧状态稳定与否的最直接反映，其稳定性检测与评价对锅炉的安全经济运行有着重要的作用。燃烧不稳定，会导致燃烧效率下降，产生更多的环境污染物、噪音等，更可能引起严重的事故，造成人员伤亡和财产损失。为了能及时、灵敏、可靠地检测炉内燃烧工况，防止在点火、低负荷等燃烧不稳定工况下发生炉膛爆炸、火焰刷墙，以及温度场分布异常等情况，电站锅炉必须配备功能齐全、性能可靠的炉膛安全监视系统，实时监测燃烧状态。另外，当燃烧器正常工作，由于火焰检测器误检而切断煤粉供给，同样会造成不必要的经济损失。因此为了能及时、灵敏、可靠地检测炉内燃烧工况，防止在点火、低负荷等燃烧不稳定工况下发生炉膛爆炸以及温度场分布异常等情况，对燃烧质量的正确评价显得尤为重要。在燃煤火电机组单机容量不断提高、参数不断增多、系统越来越复杂的情况下，基于炉膛燃烧火焰图像对电站锅炉燃烧优化控制和状态诊断问题进行研究，将为燃煤火电机组实现高效率、低污染排放、安全稳定运行提供有效解决方案。
+关键词：燃烧稳定性，稳定性指标
+* ABSTRACT
+The combustion flame is the most direct reflection of whether the combustion state is stable or not, and its stability detection and evaluation play an important role in the safe and economic operation of the boiler. Unstable combustion will lead to a decrease in combustion efficiency, produce more environmental pollutants, noise, etc., and may even cause serious accidents, causing casualties and property losses. In order to be able to detect the combustion conditions in the furnace in a timely, sensitive and reliable manner, prevent furnace explosion, flame wall painting, and abnormal temperature field distribution under unstable combustion conditions such as ignition and low load. Power station boilers must be equipped with a fully functional and reliable furnace safety monitoring system to monitor the combustion status in real time. In addition, when the burner is working normally, the pulverized coal supply is cut off due to the false detection of the flame detector, which will also cause unnecessary economic losses. Therefore, in order to detect the combustion conditions in the furnace in a timely, sensitive and reliable manner, and prevent furnace explosions and abnormal temperature field distribution under unstable combustion conditions such as ignition and low load, the correct evaluation of combustion quality is particularly important. As the single unit capacity of coal-fired thermal power plants continues to increase, the parameters continue to increase, and the system becomes more and more complex, the combustion optimization control and status diagnosis of power station boilers are studied based on the combustion flame image of the furnace. It will provide effective solutions for coal-fired thermal power plants to achieve high efficiency, low pollution emissions, and safe and stable operation. 
+KEY WORDS: combustion stability, stability index
+* 背景及意义
+由中电联发布的2019 - 2020年度全国电力供需形势分析预测报告可知，2019年国内全年全社会用电量7.23万亿千瓦时，比上年增长4.5%，2020年电力消费将延续平稳增长态势，全社会用电量增长4% - 5%，预计年底发电装机容量21.3亿千瓦，其中火电仍将为最大占比，且在火电装机中，煤电所占比例最大[1]。煤炭是我国的主要化石能源，而燃煤电厂对煤炭的需求量是全国煤炭需求量的一半左右[2]。由此易知，火力发电在未来仍将占比较高，燃煤机组仍将占据主导地位。近年来我国对经济能源结构进行了调整，风电、太阳能和核电等新能源占比上升明显，2020年是“十三五”规划的收官之年，全面推动煤电机组灵活性改造，提升燃煤机组运行稳定性效益性成为火力发电的重中之重。火焰稳定性是火焰稳定燃烧的基础，电站锅炉燃烧的基本要求是在炉膛内建立并维持稳定、均匀的燃烧火焰，燃烧火焰是表征燃烧状态稳定与否最直接的反映[3]。燃烧不稳定不仅会降低锅炉热效率，产生污染物、噪声等，而且在极端情况下可能引起锅炉炉膛灭火，如若处理不当甚至会诱发炉膛爆燃造成事故，造成设备的严重损伤，对工作人员的人身安全带来危险，影响电厂运行的安全性和经济性。因此，对炉内燃烧工况进行实时、可靠的监测，是有效地避免在燃烧不稳定工况下发生炉膛爆炸及温度场分布异常等安全事故的有效手段[4]。为了预防这种潜在的危险必须进行切实有效的火焰检测和燃烧诊断，火焰检测包含了两个含义，即火焰是否存在和燃烧是否稳定，后者属于燃烧诊断问题，因而更具有实用意义[5]。火焰可视化和表征技术是深入了解煤粉燃烧的重要研究工具之一，旨在保证燃烧过程安全运行的同时减少未燃尽碳损失和污染物排放[6]。研究燃烧系统火焰稳定性的最终目的是达到最优的燃烧过程，降低污染物排放，提升电厂的安全运营。
+近年来，随着计算机视觉技术方法的飞速崛起，将机器学习、深度学习等人工智能算法结合数字图像处理技术应用于炉膛燃烧状态监测已经成为众多学者关注的热点。现有的火焰图像监测技术主要是将数字图像处理技术与人工智能算法结合，通过传统特征提取技术或者深度学习方法提取火焰图像的特征并利用其建立基于数据驱动模型来监测锅炉燃烧过程，并根据特征参数结合机器学习算法判断炉膛内部煤粉燃烧稳定性状况。
+* 研究火焰稳定性的方法
+炉膛火焰燃烧时会释放出大量的福射能量，这包括有：光、热和福射能等，同时锅炉内也会伴有复杂的能量转化和表征火焰燃烧的特征信息，如火焰燃烧发出的声音和炉膛负压变化等信息。而火焰传感器检测火焰的原理就是通过检测这些特征量的存在来作为燃烧判据。传统锅炉火焰检测技术按照检测的方式分为非接触式与接触式和两类。
+1. 接触式火焰检测
+接触式火焰检测是利用检测传感器来直接测量锅炉火焰的福射热能或其它特征量的方法。常用的接触式火焰检测包括有：烟色法、电极检测法、压差法、声学法、温度检测法等[7]。接触式火焰检测要把检测装置安装于炉内，通常安装位置相对固定，且检测位置要求高[8]，但是锅炉内部环境复杂恶劣，伴随着高温、高压还有各种飞灰和腐蚀性气体等，这些都对检测装置可靠性提出了更高的要求。
+接触式火焰检测由于其在实际应用中存在的较大局限性，在现代锅炉火焰检测系统中已经被淘汰，其局限性主要表现在[9,10]：功能单一，误差大，可靠性低，安装调试困难。
+2. 非接触式火焰检测
+非接触式火焰检测是一般意义上的火检，通过检测各辐射能信号来进行火焰的灭火检测，由于是一种非接触检测方法，检测的可靠性较接触式提高，因此在锅炉火焰检测方面得到广泛应用。根据福射光能的光谱波段的不同非接触式火焰检测器可分为：红外型火检器、可见光型火检器、紫外型火检器以及组合型火检器[11]。
+非接触式火焰检测与被测介质没有直接接触，和接触式火焰检测相比避免了炉膛高温复杂环境使用限制，也无需等到检测参量的动态平衡，检测的响应速度快精度更高，可适应不同燃料和工况下的火焰检测，因此相比接触式火焰检测具有更好的实用性，但同时也存在很多问题[12]：火焰检测器易损坏，检测的可靠性不高；火检器检测器参数设定与火焰随负荷动态燃烧的矛盾；火焰检测探头视角小与火焰脉动飘移的矛盾；火检器功能单一与燃烧诊断的矛盾。
+传统的锅炉火焰检测技术由于其在应用中的局限性，无法满足工业锅炉燃烧工况要求已经被淘汰，随着工业和计算机技术的不断发展，工业锅炉的可视化和智能化监控系统受到越来越多研究者的关注。研究者为了获取炉内燃烧状况的更多有效信息而做了大量的工作，并在当前的科技发展水平上，提出了许多新技术、新方法。
+随着火检技术的不断发展，当前电站锅炉火焰检测内容己经由最初的检测火焰的有无增加了各种诊断内容。针对锅炉燃烧稳定性的判定问题，国内外研究现状主要分为以下几类方法：
+** 基于火焰辐射强度的燃烧判稳方法
+辐射是燃烧过程的特点之一，对于工业燃烧火焰，目前有越来越多的研究人员利用火焰辐射的探测来进行燃烧诊断的研究，以掌握实际燃烧设备的燃烧状况，为充分利用能源、减轻环境污染、提高燃烧过程的安全性提供有效的监测手段，对现代大型电站锅炉而言，火焰监测是同装置运行的安全性和经济性紧密联系在一起的，且对火焰监测技术水平的要求愈来愈高[13]。
+燃烧火焰是表征燃烧状态稳定与否最直接的反映，而煤粉火焰辐射光的一个重要特点就是火焰脉动，它是随时间变化的[14]，基于这个特点，马骏等人[15]通过光电传感器获得一系列以一定的频率、在某个均值左右上下波动的火焰强度值，利用快速傅立叶变换算法（FFT）的处理将获得的时域信号转换成频域上的功率信号，又因为在稳定和不稳定的燃烧状态下转换后得到的低频分量有明显的区别，所以把每个功率谱中前30个低频分量取出作为神经网络的训练输入。然后通过自组织神经网络的学习训练，得到对应于稳定和不稳定燃烧状态火焰信号的不同输出区域，从而对火焰在稳定燃烧工况、不稳定燃烧工况和不定燃烧工况进行有效的模式识别，最终给出燃烧诊断的判断结果。
+由于可见光波动强度较小，频谱范围较窄，利用单燃烧器检测可见光信号比依靠红外线和紫外线检测可取得更大的视野范围，获得更多的信息量[16]，从而有利于提高判断的灵敏度和准确性。敖丽敏等人[17]基于煤粉燃烧的火焰脉动的特点，通过采集单燃烧器的光强信号，借助小波在非平稳信号处理中的时频局部化及其特有的优良特性[18]，进行信号的特征提取和小波降噪，把含噪信号进行多尺度的小波分解、特征提取，对信号进行软阈值去噪处理，去除白噪声和有色噪声的干扰，将预处理后的信息作为神经网络的训练输入建立子空间能量和燃烧状况之间的映射关系。
+** 基于炉膛微压信号的燃烧判稳方法
+微压探测是目前锅炉燃烧诊断的重要手段之一。其理论基础建立于燃烧有关振动研究的基础之上。通过对燃烧中产生微压波动的检测对燃烧状态进行判断，从而获得微压波动能谱与燃烧状况的相应关系。基于炉膛微压信号的燃烧诊断具有处理数据量少、测点安装和调试简单以及硬件成本低等特点，可以对火焰图像处理方法进行辅助判断，但由于锅 炉燃烧过程十分复杂，有些机理还不十分清楚，相应的微压特性也很复杂，高翔等人[19-21]对此做过一些初步研究与探讨，他们的工作主要是在试验炉上。
+肖隽等人[22]通过对江苏某电厂现场运行锅炉进行试验，对测得的数据进行频谱分析，获得了炉膛负压信号变化与燃烧状况之间的重要关系：炉膛压力变化的确反应了锅炉燃烧状况，与不同燃烧状况相对应的炉膛压力具有一定的频谱特征；锅炉点火与熄火属于不稳定燃烧状况，此时炉膛负压信号频谱中有冲击信号特征，这是由于锅炉启停过程中炉膛压力信号有一个升高或降低的阶跃变化，正是这种阶跃导致压力信号频谱中的低频冲击；锅炉冷态工况、锅炉满负荷以及锅炉低负荷燃烧工况都属于稳定燃烧工况，稳定燃烧工况炉膛压力信号频谱具有明显的特征频率，相互之间可以区分。
+高翔等人[23]利用压力传感器进行了燃烧状态诊断的试验研究，提出了一种通过压力脉动信号分析燃烧状态的简单有效方法，对归一化后压力脉动信号作线性回归并计算回归直线斜率K，根据K值对燃烧状态进行分类判断。高翔等人提出随K值的增大燃烧状态趋于不稳定，对于本实验炉当| K | > 0.6时为燃烧状态处于的熄火和点火剧变过程，而| K |∈[0.3, 0.6)则燃烧处于不稳定状态，只有| K | < 0.15时燃烧状态才基本稳定，通过频谱分析发现，当频带具有3Hz以下的低频能量富集区时该燃烧状态不稳定。
+** 基于光谱信息的燃烧判稳方法
+燃烧火焰的辐射光具有很宽的连续光谱。煤粉的燃烧过程可以简单的看作是化学中的氧化过程，这一过程主要发生在炉膛的主燃区，燃烧反应的过程并不是在极短的时间内完成的，在燃烧区域内不可避免的存在大量未充分燃烧的中间产物。其浓度直接影响了火焰光谱的特征波长，因此根据火焰的光谱分析作为煤粉燃烧的重要依据成为可能，这就是光谱分析火焰稳定性的基础。
+煤粉燃烧过程中强度和脉动是两个重要的过程值。这两个值直观的反映了燃烧火焰的特征。不同的煤粉浓度下，火焰的光谱分布曲线（光强-波长曲线）不同。在波长为5000埃和7000埃附近出现峰值，在6000~7000埃之间出现低谷，并且在低估段内火焰辐射强度随火焰中煤粉浓度的降低而减少，呈明显的正相关性，而两个峰值段却无此现象[24]。Shimoda[25]通过定性分析指出，燃烧火焰检测的辐射波长应该在6000~7000埃之间进行，当波长小于5500埃时燃烧火焰的信噪比很小，而当燃烧火焰的波长大于7000埃时，周围热环境的辐射信号很强，检测信号不能正确的反应燃烧工况的变化。
+蔡小舒等人[26]基于煤粉火焰辐射光谱信号，发现在煤粉锅炉中不仅不同火焰及炉墙的黑度不同，在煤粉不同燃烧阶段还存在一些特征谱线，根据是否存在这些特征谱线，以及测得的火焰黑度和火焰的光谱辐射强度可以可靠地构造火焰是否存在的判据。在此基础上蔡小舒等人提出了一种煤粉火焰燃烧监测和诊断测量方法，即测量煤粉火焰的从可见光到近红外的辐射光谱，分析光谱特性来得到火焰温度和黑度，以及美分燃烧的特征辐射谱线，根据普朗克定律和维恩公式中火焰辐射光谱与火焰温度与黑度的相对关系，构造了火焰复合判据作为燃烧判稳的特征参数，以判断火焰是否存，并根据测得的火焰黑度和辐射强度用人工神经网络对煤粉火焰的燃烧状况进行诊断。
+** 基于火焰图像的燃烧判稳方法
+随着计算机视觉的快速发展，应用人工智能、深度学习等新的理论结合数字图像处理技术成为众多学者关注的热点。它继承了火焰电视直观、形象的优点，又充分发挥计算机强大的计算处理能力，使火焰检测功能得到了质的提升。由于火焰的复杂动态特性，现阶段，基于火焰成像技术的燃烧监测主要是将图像处理技术与软计算技术相结合，提取火焰图像特征并利用建立数据模型的方法来对其状态进行监测。
+上世纪80年代开始采用火焰福射图像处理技术进行燃烧检测和诊断的研究，最早是日立公司开发了火焰图像识别系统FIRES（Flame Image Recognition System），该系统亦被用来进行NOx诊断[27]。三菱的光学图像火焰扫描OPTIS（Optical Image Flame Scanner）系统对火焰探测的灵敏度有一个很大的提高，能够减少来自炉膛背景热辐射及邻近锅炉对待检测火焰信号的干扰[28]。Takamura Shozo等人[29]在垃圾焚烧炉出口安装TV摄像机得到燃烧火焰图像，从中提取燃烧参数进行燃焼控制，并且搭建基于Kohoen神经网络的模型，该模型能进行自组织学习，并将图像像素值转化为进行燃烧诊断的定量指标。K.Sijatha等人[30]研究了使用分类算法的用于对电站锅炉燃烧质量评估的火焰图像分析。
+在国内，清华大学吴占松教授[31]最先开始对火焰图像进行处理研究，其最早的研究是测量火焰温度分布。上海交通大学的徐伟勇教授等人[32]利用CCD摄像机获取燃烧图像，伪彩显示燃烧图像，并综合伪彩火焰特征与燃烧器的开关状态来对燃煤锅炉进行燃烧稳定性判定。华中科技大学的周怀春教授[33,34]带领的团队一直在进行炉膛温度场重建的理论和工程应用研究，目前已取得一定的成果。东南大学王式民教授等人[35]研究了火焰三维温度场可视化的方法，该方法亦是对火焰图像的处理研究。华北电力大学[36]提出了新的特征参数——差分图像相对变化量进行燃烧判稳。
+由于炉膛火焰燃烧过程的复杂性，使得准确反映炉膛火焰燃烧状态的火焰图像特征参数难以确定，在用神经网络训练方法构造分类器时，神经网络的收敛速度和识别的准确性不能同时满足实际要求。韩璞等人[36]提出了交互式火焰图像识别方法：将人对识别结果的评价信息加入火焰图像的分类识别系统中，以此改善神经网络的分类识别性能。韩璞等人提出的交互式火焰图像识别系统，在构造神经网络的过程中，引入用户反馈信息来修正神经网络分类器，这样既可以有效降低模型对火焰特征参数的依赖性，加速收敛，又可以实现隐含层神经元个数的动态调整，提高系统的识别准确性。
+刘禾等人[37]研究了关于燃煤锅炉的燃烧稳定性判别问题，在动态图像上提取了燃烧稳定性特征参数，即提取图像中着火位置相对变化量作为描述火焰燃烧动态变化过程，利用模糊神经网络进行燃烧稳定性判断，故障诊断模块是采用了由3层BP神经网络建立的诊断模型，将燃烧状态判别为稳定、较稳定、欠稳定和不稳定4种状态。该方法利用模糊神经网络获取专家判别经验，并可通过网络学习调整判别规则以适应各种燃烧状况，该判别方法有效地实现了燃烧稳定性判断，对实现炉内燃烧状态监测、保障锅炉设备安全运行具有重要意义。
+徐宝昌等人[38]针对锅炉燃烧监控系统所采集的火焰动态图像，提出了一种基于在线模糊聚类算法的炉内火焰燃烧诊断方法。该方法分析了火焰图像的特点，提取了判别火焰稳定性的特征量，以提取的特征量作为在线模糊聚类算法的输入参数，分析燃烧图像的隶属度，给出判别标准对燃烧稳定性进行综合评估，但判别标准的可行性还有待进一步验证。
+Liu等人[39]提出了一种支持向量机（SVM）算法来监测炉膛火焰的状态。根据数字图像处理技术提取火焰特征量构成一组向量，然后使用支持向量机分类算法对燃烧火焰进行分类。利用该方法对火焰图像进行分析，可以有效地确定燃烧状态的燃烧状态。
+吴一全等人[40]将Krawtchouk矩引入火焰特征提取，将Krawtchouk矩不变量与小波支持向量机相结合的火焰燃烧状态识别方法。采用支持向量机算法对火焰图像进行状态识别；并采用混沌小生境粒子群算法优化支持向量机中的核函数与惩罚银子，使识别性能达到最优。
+Li等人[41]利用图像处理技术提取图像特征，采用极限学习机（Extreme learning machine，ELM）判断燃烧状态。其均采用图像分割技术对火焰图像进行分割，随后提取火焰特征，建立极限学习机模型，对回转窑内火焰的状态进行识别。
+Wang[42]提出了一种新的基于深度学习的方法来识别炉膛燃烧状态和测量放热率。通过端到端网络，特征提取和燃烧状态分类被集成到一个框架中。深度学习模型将火焰图像转化为多层DNN（深度神经网络）或CNN（卷积神经网络），以同时预测燃烧状态和热释放速率。
+** 基于统计学方法的燃烧判稳方法
+火焰的形状在不同的燃烧状态下是随机波动的，但在一定燃烧条件下，一些火焰形状参数是具有一定统计规律的，所以通过使用这些参数可以用于对火焰稳定性进行描述。
+Qiu[43]介绍了在二维火焰图像中高效提取中轴的水平切割中轴（HCMA）算法，这种方法使用边缘检测算法得出火焰的边缘，再对火焰边缘图像计算中轴。随后，Qiu[44]又提出了三维空间中提取火焰中轴的算法。在三维空间中分别从两个相互垂直的角度去获取火焰图像。三维中轴描述起来更复杂，二维是用内切圆的圆心去定义中点，三维则是内切球体的球心去定义，然后获得中轴。
+基于统计学分析方法，提取火焰燃烧中的特征。其中一种源于图像处理的统计学方法中轴统计分析法具有反映不同燃烧状态的能力。Sun[45]证明了中轴对于火焰形状的描述是有用的，它可以大大减少数据处理的数据量。
+白卫东等人[46]采用CCD成像系统采集火焰信号，提取火焰的燃烧区域、着火点等火焰特征信息，然后基于主元分析技术提出一种对燃烧火焰的稳定性进行监视和诊断的方法，采用Hotelling T_2和平方预测误差（Squared prediction error，SPE）两个统计量对每一时刻的图像数据向量进行监测，检验是否超过各自的控制限，只要这两个统计量之一越限，则可判定燃烧出现异常。
+Chen[47]提出了一种新颖的视频在线火焰检测方法。该方法包括隐马尔可夫模型(HMM)和多路主成分分析(MPCA)：利用MPCA在低维空间中提取空间关系之间的相互关系，并构造序列观测的时间行为。虽然在操作过程中可能无法获得先前的过程知识，但正常状态的概率分布可以通过从正常操作过程中收集到的图像进行训练；通过递归维特比算法对新观测到的图像进行监测，从观测到的序列中找到过渡状态序列。与传统的统计过程控制原理一样，生成简单的概率监控图来跟踪当前过渡状态序列的进展情况，并监控可观测到的扰动的发生情况，旨在早期检测燃烧系统状态，防止系统进一步退化和出现故障。
+针对传统基于成像技术的燃烧过程监测方法仅适用于单个燃烧工况的问题，Bai[48]结合数字成像，提出了一种基于PCA-RWN（主成分分析和随机加权网络）的多工况燃烧过程监测方法。基于PCA-RWN的多工况燃烧监测方法可以有效的识别不同的一次风量工况并且多元统计量T2和SPE可以有效检出异常燃烧状态。
+* 主要参考文献
+[1] 中电联. 2019-2020年度全国电力供需形势分析预测报告[Z]. 2020. 
+[2] 段志强. 低负荷稳燃技术在燃煤锅炉中的应用[J]. 山东工业技术, CNKI: SUN: SDGJ. 0. 2019-05-174. 
+[3] MALMGREN A, RILEY G. 5.04-Biomass Power Generation[J]. SAYIGH A. Oxford: Elsevier, 2012: 27-53. 
+[4] 佘星星, 黄福珍. 锅炉火焰图像特征及燃烧状态智能监测综述[J]. 上海电力学院学报, 2010, 26(4): 399-405. 
+[5] 吕震中, 沈炯. 电站锅炉火焰检测及燃烧诊断技术[J]. 锅炉技术, 1997(05): 8-14. 
+[6] 张清宇. 火焰燃烧稳定性诊断方法研究[D]. 浙江大学, 2004.
+[7] 华彦平, 邹煜, 吕震中. 现代燃煤电站锅炉火焰检测综述[J], 热能动力工程,2001,16(1). 
+[8] http://www.110ye.com/news/340530-732734.html[OL]. (北京国电海明科技发展有限公司: SFSSS炉膛安全监视保护仪). 
+[9] 徐益谦, 现代锅炉火焰检测技术的新进展[M]. 北京:科学出版社,2000. 
+[10] 甄成刚, 基于图像处理技术的炉膛火焰检测方法研究[D]. 保定:华北电力大学,2004. 
+[11] 佘星星, 黄福珍. 锅炉火焰图像特征及燃烧状态智能监测综述[J]. 热能动力工程,2010.(08). 
+[12] 张清宇. 火焰燃烧稳定性诊断方法研究[D]. 杭州:浙江大学,2004. 
+[13] HWANG C-H, LEE S, KIM J-H, et al. An experimental study on flame stability and pollutant emission in a cyclone jet hybrid combustor[J]. Applied Energy, 2009, 86(7): 1154–1161.
+[14] 华彦平. 现代燃煤锅炉火焰检测综述[J]. 热能动力工程,2001,(16):1-6. 
+[15] 马骏, 余岳峰, 范浩杰. 基于频谱分析和自组织神经网络的火焰燃烧诊断研究[J]. 动力工程学报, 2004(06): 852–856. 
+[16] KRANZ C .A new flame detection method for two channels infrared flame detectors[A]. Institute of Electrical and Electronics Engineers 29th Annual 1995 International Carnahan Conference on 18~20 Oct[C]. Sanderstead UK: Digital Object Identifier,1995.209- 213. 
+[17] 熬丽敏, 黎建华, 宋轩等. 一种基于自适应小波变换的火焰检测方法的研究. 热能动力工程，2006，21(6):594-597. 
+[18] DAUBECHIES I. The wavelet transform, time-frequency localization and signal analysis[J]. IEEE Trans Inform Theory, 1990, 36(5): 961-1005.JONES A R. Flame Failure Detection and Modern Boilers[J]. Journal of Physics E: Scientific Instruments, 1988, 21(10): 921–928.
+[19] 高翔, 骆仲涣, 陈亚非, 周劲松, 倪明江, 岑可法. 电站锅炉燃烧实时诊断应用技术[J]. 电站系统工程, 1998, 14(3). 
+[20] 高翔, 骆仲映, 陈亚非, 周劲松, 倪明江, 岑可法. 应用微压探测诊断燃烧状况的实验研究[J]. 动力工程, 1998, 18. 
+[21] 高翔, 骆仲映, 陈亚非, 周劲松, 倪明江, 岑可法. 锅炉实时燃烧诊断系统的开发[J]. 热力发电, 1999, (6). 
+[22] 肖隻, 王一清, 吕震中. 基于炉膛微压信号的锅炉燃烧诊断试验研究[J]. 锅炉技术, 2002, 33(7):12-15. 
+[23] 高翔, 骆仲映, 陈亚非等. 应用微压探测诊断燃烧状况的试验研究化动力工程, 1998, 18(4):27-31, 14. 
+[24] 马骏, 余岳峰, 范浩杰. 基于频谱分析和自组织神经网络的火焰燃烧诊断研究[J]. 动力工程学报, 2004(06): 852–856. 
+[25] SHIMODA M, SUGANO A, KIMURA T, et al. Prediction Method of Unburnt Carbon for Coal Fired Utility Boiler Using Image Processing Technique of Combustion Flame[J]. IEEE Transactions on Energy Conversion, 1990, 5(4): 640–645.
+[26] 蔡小舒, 季馄, 苏明旭等. 基于光谱分析的煤粉火焰复合判据和燃烧诊断研究[J]. 中国电机工程学报, 2004, 24(1):211-215. 
+[27] Kurihara N, Nishikawa M. A Combustion Diagnos is Method for Plverized Coal Boilers Using Flame Image Recogniting Technology[J]. IEEE Transactiong on Energy Conversion, 1986, 1(2): 99-103. 
+[28] Mitsubishi Heavy Industrialists. Specfication of Flame Detector[M]. 1997. 
+[29] Takamura Shozo, et al. Evaluation of the Combustion Condition of Refuse Incinerator by th Image of the inside Color of Flame and Self-organization of Learning of the Incinerator inside us using Kohonen networks[J]. Gazo Rabo, Vol 9, No.3, 1998: 44-6. 
+[30]K. Sujathal, Dr. N. Pppa2. Flame Image Analysis for Combustion Quality Estimation in Pawer Station Boilers using Classification Algorithms[Z]. Chennai and Dr. MGR University Second International Conference on Sustainable Energy and Intelligent System, India. July. 20-22, 2011. 
+[31] 吴占松. 发光火焰的图像处理及其在燃烧检测中的应用[D]. 博±. 北京: 清华大学, 1988. 
+[32] 徐伟勇, 余岳蜂, 孙江等. 数字图像处理技术在火焰检测上的应用[J]. 中国电力, 1994, (10): 41-44. 
+[33] 周怀春, 娄新生, 邓元凯. 基于辐射图象处理的炉膛燃烧三维温度分布检测原理及分析[J]. 中国电机工程学报, 1997, 17(1): 1-4. 
+[34] 周怀春, 娄新生, 肖教芳等. 炉膛火焰温度场图象处理试验研究[P]. 中国电机工程学报, 2000, 20(7): 40-43. 
+[35] 刘禾, 程伟良. 基于火焰序列图像的煤粉燃烧稳定性判别[J]. 动为工程, 2004, 24(5): 681-689.
+[36] 韩璞, 张欣, 王兵. 基于神经网络的交互式炉膛火焰图像识别[J]. 中国电机工程学报, 2008, 4(20): 22–26.
+[37] 刘禾. 基于火焰图像和模糊神经网络的锅炉燃烧稳定性判别[J]. 仪器仪表学报, 2008(06): 1280–1284. 
+[38] 徐宝昌, 张丁元, 程亮. 基于图像的火焰稳定性判别方法研究[J]. 计算机工程与应用, 2012, 48(09): 168–171. 
+[39] DAO-GUANG L, LI-XIA L, CHANG-LIANG L, 等. Flame Furnace in Thermal Power Plant Condition Monitoring Using SVM[C]. 2009 Second International Conference on Intelligent Computation Technology and Automation. 2009: 67–70. 
+[40] 吴一全, 朱丽, 周怀春. 基于Krawtchouk矩阵和支持向量机的火焰状态识别[J]. 中国电机工程学报, 2014, 34(5): 734–740. 
+[41] LI W, WANG D, CHAI T. Flame Image-Based Burning State Recognition for Sintering Process of Rotary Kiln Using Heterogeneous Features and Fuzzy Integral[J]. IEEE Transactions on Industrial Informatics, 2012, 8(4): 780–790. 
+[42] WANG Z, SONG C, CHEN T. Deep Learning Based Monitoring of Furnace Combustion State and Measurement of Heat Release Rate[J]. Energy, 2017, 131: 106–112. 
+[43] QIU T, YAN Y, LU G. A Medial Axis Extraction Algorithm for the Processing of Combustion Flame Images[C]. 2011 Sixth International Conference on Image and Graphics. 2011: 182–186.
+[44] QIU T, YAN Y, LU G. A three-dimensional shape descriptor for burner flames[C]. 2012 IEEE International Conference on Imaging Systems and Techniques Proceedings. 2012: 506–509.
+[45] SUN D, LU G, ZHOU H, et al. Flame Stability Monitoring and Characterization Through Digital Imaging and Spectral Analysis[J]. Measurement Science and Technology, 2011, 22(11): 114007.
+[46] 白卫东, 严建华, 池涌, 等. 基于图像技术和PCA方法的火焰监测研究[J]. 动力工程, 2004(01): 87–90.
+[47] CHEN J, HSU T-Y, CHEN C-C, et al. Monitoring combustion systems using HMM probabilistic reasoning in dynamic flame images[J]. Applied Energy, 2010, 87(7): 2169–2179.
+[48] BAI X, LU G, HOSSAIN M M, et al. Multi-mode combustion process monitoring on a pulverised fuel combustion test facility based on flame imaging and random weight network techniques[J]. Fuel, 2017, 202: 656–664.
