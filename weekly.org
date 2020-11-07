@@ -1,3 +1,10 @@
+* [2020-11-06 周五]
+** Done
+1. 完成并提交了开题报告和文献综述
+** Question
+无
+** Plan
+1. 处理火焰视频数据
 * <2020-10-23 周五>
 ** Done
 1. 阅读《Real-Time Fire Detection Based On Deep Convolutional Long-Recurrent Networks And Optical Flow Method》、《Optical Flow Feature Based for Fire Detection on Video Data》、《高炉内煤粉燃烧速度场的数值模》、《混煤燃烧特性研究及燃烧速度预测》。
