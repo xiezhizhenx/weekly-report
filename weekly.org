@@ -9,4 +9,9 @@
 2. Check combustion steady monitoring function.
    hello world！
 * [2021-12-02 Thu]
+** Done
  整理之前的文件和测试git上传
+** Questions
+** Plan
+** Review
+汇报尽量用模板，在Plan中给自己定个计划。
