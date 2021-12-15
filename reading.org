@@ -64,13 +64,8 @@
 
 ** 结论
 该系统采用锅炉在线测量系统和监控炉排的彩色摄像机的输入，用于超前预测输出水温。采用深度、全连接的神经网络并行预测当前时刻往后不同时刻的出水温度，并实时更新，同时输出未来水温的期望值和预测区间。使用深度神经网络提高了预测的准确性，并比浅层神经网络更好地处理了复杂和非线性的预测问题。该系统短期预测误差最小，可以提前30min预测阶梯炉排锅炉的发热量，误差在±1℃。
-* [2021-12-08 Wed]
-** 文章信息
-@inproceedings{Chunming0Research,
-  title={Research and Simulation of Boiler Combustion System Based on Convolution Neural Network},
-  author={Chunming and Ouyang and Li and Xiao and Zhibin and Xu and Weidong and Zhang},
-  booktitle={第二届电气、控制与自动化国际会议},
-}
+* Chunming Ouyang,Li Xiao,Zhibin Xu,Weidong Zhang. Research and Simulation of Boiler Combustion System Based on Convolution Neural Network[C]//Proceedings of the 2nd International Conference on Electrical, Control and Automation（ICECA2018）.[出版者不详],2018:504-512.
+Ouyang等 [[cite:&Ouyang-et.al._2018]] 建立了锅炉的卷积神经网络模型，实现了……
 ** 问题
 燃煤锅炉的燃烧机理复杂，输入和输出之间不仅存在着很大的时延，而且还存在着高度的非线性。传统建模方法时间成本高，对操作人员的专业知识水平要求高。更重要的是，随着系统的运行和设备的不断老化，模拟过程与实际物理过程之间的差异会越来越大。
 
@@ -92,3 +87,6 @@
 
 
 
+* 参考文献                                                           :ignore:
+bibliographystyle:unsrt
+bibliography:./papers.bib
