@@ -2,7 +2,7 @@
 ** Done
 1. Read "The Promise of Artificial Intelligence in Chemical Engineering: Is It Here, Finally?".
 2. Revise the patent about combustion steady estimation.
-** Quesions
+** Questions
 1. Need new ideas of AI applications for power plants.
 ** Plan
 1. Commit the patent about combustion steady estimation.
@@ -10,8 +10,12 @@
    hello world！
 * [2021-12-02 Thu]
 ** Done
- 整理之前的文件和测试git上传
+整理之前的文件和测试git上传
+
+* [2021-12-08 Wed]
+** Done
+1. 阅读了"Research and Simulation of Boiler Combustion System Based on Convolution Neural Network"
 ** Questions
+1. 对卷积神经网络的具体工作模式还不够了解，需要继续补充相关知识。
 ** Plan
-** Review
-汇报尽量用模板，在Plan中给自己定个计划。
+1. 对应教程尝试搭建出一个简单卷积神经网络模型。
