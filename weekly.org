@@ -9,15 +9,11 @@
 2. Check combustion steady monitoring function.
    hello world！
 * [2021-12-02 Thu]
-<<<<<<< HEAD
-=======
 ** Done
->>>>>>> 0a04bfb7dc623241d1089de009fcd153504f4e3d
 整理之前的文件和测试git上传
 
 * [2021-12-08 Wed]
 ** Done
-<<<<<<< HEAD
 1. 阅读了"Research and Simulation of Boiler Combustion System Based on Convolution Neural Network"。
 ** Questions
 1. 对卷积神经网络的具体工作模式还不够了解，需要继续补充相关知识。
@@ -28,14 +24,6 @@
 ** Done
 1. 机器学习结课大作业，在kaggle上完成一道关于房价预测的机器学习题目。结合网上的经验，目前完成了大部分内容。
 ** Questions
-1. 
 ** Plan 
 1. 继续上周神经网络的学习和搭建。
 2. 完成房价预测论文的编写。
-=======
-1. 阅读了"Research and Simulation of Boiler Combustion System Based on Convolution Neural Network"
-** Questions
-1. 对卷积神经网络的具体工作模式还不够了解，需要继续补充相关知识。
-** Plan
-1. 对应教程尝试搭建出一个简单卷积神经网络模型。
->>>>>>> 0a04bfb7dc623241d1089de009fcd153504f4e3d
