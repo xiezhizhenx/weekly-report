@@ -5,6 +5,7 @@
 ** 结论（注意是否解决了前面提出的特殊问题）
 * An J.and Wang H.and Liu B.and Luo K.H.and Qin F.and He G.Q.A Deep Learning Framework for Hydrogen-fueled Turbulent Combustion Simulation[J]. International Journal of Hydrogen Energy, 2020.
 cite:&AnJ-et.al._2020
+[[
 ** 问题
 由于CFD的高成本阻碍了其在燃烧相关设计、研究和优化中的应用，本文提出了一基于深度学习方法的湍流燃烧模拟框架。
 ** 方法
