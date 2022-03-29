@@ -107,6 +107,7 @@
 3. 遗传算法将在大约在50步内收敛。
 * Ha N Z,Li J,Zhang B,et al. Prediction of combustion state through a semi-supervised learning model and flame imaging[J]. Fuel, 2020, 289(4):119745.
 [[cite:&Han-et.al._2020]]
+
 ** 问题
 由于燃烧火焰本质上具有复杂性和随机性，很难准确预测燃烧状态。尽管通过基于CNN的模型已经取得了各种进展，但这些模型中的一个很大的问题是需要更多的标签数据来进行训练。预测精度还取决于标记数据的规模和质量。
 
