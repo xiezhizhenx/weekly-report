@@ -20,9 +20,10 @@
 
 本文利用数值模拟和全尺寸实验系统地研究了与该技术相关的煤的着火和燃烧特性。
 * unfind
-** Combustion Condition Recognition of Coal-Fired Kiln Based on Chaotic Characteristics Analysis of Flame Video 
+** Combustion Condition Recognition of Coal-Fired Kiln Based on Chaotic Characteristics Analysis of Flame Video
 提出了一种燃烧状态识别方法。
 
 首先从一段燃煤窑炉火焰视频中提取的烈度序列中发现了混沌特征，然后进一步发现了不同燃烧条件下的混沌规律不同。在此基础上，设计了一组混沌吸引子的轨迹演化特征和形态分布特征，用于燃烧状态识别。通过相空间重构对火焰视频的强度序列进行混沌吸引子的重构，从递归图和形态分布中提取量化特征，并将其放入决策树中进行燃烧状态识别。
 ** Reconstruction of Temperature Field in Coal-fired Boiler Based on Limited Flame Image Information
 本文提出了一种基于改进的双色测温方法的温度场重构方法。该方法利用BP神经网络建立了改进的双色测温方法中火焰图像灰度值与待解参数之间的数学模型。然后，根据火焰图像的灰度值重建炉膛内的温度场。该方法解决了传统炉膛温度场重构算法无法获得准确辐射能量数据的问题，简化了该方法的测量和计算，提高了精度。
+* read
