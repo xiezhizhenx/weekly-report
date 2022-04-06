@@ -1,29 +1,29 @@
-* unread 
-**  Combustion stability, burnout and NOx emissions of the 300-MW down-fired boiler with bituminous coal: Load variation and low-load comparison with anthracite
+* Boiler combustion stability
+** Find PDF
+***  Combustion stability, burnout and NOx emissions of the 300-MW down-fired boiler with bituminous coal: Load variation and low-load comparison with anthracite
 对以烟煤为燃料的300 MW燃煤锅炉在不同负荷下的点火、燃烧稳定性、燃尽和NOx排放进行了实验研究，并与无烟煤在低负荷下的燃烧结果进行了比较。
 
 随着负荷的降低，煤/气流燃烧烟煤的点火距离逐渐提前。在相应的负荷下，燃烧烟煤的煤/气流的着火热比燃烧无烟煤的煤/气流的着火热低37%以上。随着负荷的降低，炉膛整体温度和初燃区截面热负荷的下降速率降低，烟煤燃烧时，低负荷下初燃区炉膛温度较高。点火距离短，点火热低，炉温高，保证了烟煤在低负荷下燃烧的强燃烧稳定性。
-** A novel method to improve stability of MILD combustion in a highly heat-extracted furnace
+*** A novel method to improve stability of MILD combustion in a highly heat-extracted furnace
 在工业锅炉中，大量的燃烧热通常是从水冷金属壁或水管中提取的。这一特性不利于在炉内建立相对均匀的高温环境，而这种环境是维持稳定的中、强低氧稀释(MILD)燃烧所必需的。因此，轻燃技术在工业锅炉上还有待应用。
 
 本研究提出了一种新的方法，通过在燃烧室中插入内部再循环装置(IRD)来提高轻度燃烧的稳定性。并得到较好的结果。
-** Optimization of operating conditions to achieve combustion stability and reduce NOx emission at half-load for a 550-MW tangentially fired pulverized coal boiler
+*** Optimization of operating conditions to achieve combustion stability and reduce NOx emission at half-load for a 550-MW tangentially fired pulverized coal boiler
 为实现550-MW切向燃烧煤粉锅炉在半负荷工况下的稳定燃烧和超低污染物排放(氮氧化物和未燃碳)，对不同的运行参数进行了分析和优化。
 
 在本研究中，在半负荷工况下，采用数值方法模拟了锅炉在不同工况下的流场特性、燃烧稳定性和污染物排放。运行条件包括各种燃烧器组的布置、紧密耦合过火空气(CCOFA)/分离过火空气(SOFA)分布和过量空气比。
-** CFD modeling of hydrodynamics, combustion and NOx emission in a tangentially fired pulverized-coal boiler at low load operating conditions
+*** CFD modeling of hydrodynamics, combustion and NOx emission in a tangentially fired pulverized-coal boiler at low load operating conditions
 本文针对630mw切向燃烧煤粉锅炉在低负荷运行过程中燃烧稳定性下降、NOx排放增加的问题，建立了包括流动、煤燃烧和NOx生成在内的综合CFD模型。在网格独立性和模型验证的基础上，对燃烧器的流场、温度分布、浓度分布和NOx排放进行了预测，并进一步评价了燃烧器角度/布置的影响。
-** A review on combustion instabilities in energy generating devices utilizing oxyfuel combustion
+*** A review on combustion instabilities in energy generating devices utilizing oxyfuel combustion
 本文综述了燃气轮机、锅炉和氧燃料燃烧技术炉等能源生产装置燃烧器燃烧不稳定性的理论、数值和实验研究。氧燃料系统的主要问题是燃烧不稳定，这主要是由于控制过高温度所需的CO2稀释引起的...
-** The effectiveness of a novel coal-igniting-fuel technology and application in a direct current burner
+*** The effectiveness of a novel coal-igniting-fuel technology and application in a direct current burner
 为了在低负荷和变负荷下获得更好的燃烧稳定性，提出了一种采用中频感应加热的燃煤新技术。该方法是将少量的煤粉颗粒在点火器内燃烧，形成中央引燃火焰，引燃主燃烧器内周围的煤粉，实现稳定燃烧。
 
 本文利用数值模拟和全尺寸实验系统地研究了与该技术相关的煤的着火和燃烧特性。
-* unfind
-** Combustion Condition Recognition of Coal-Fired Kiln Based on Chaotic Characteristics Analysis of Flame Video
+** Unfind PDF
+*** Combustion Condition Recognition of Coal-Fired Kiln Based on Chaotic Characteristics Analysis of Flame Video
 提出了一种燃烧状态识别方法。
 
 首先从一段燃煤窑炉火焰视频中提取的烈度序列中发现了混沌特征，然后进一步发现了不同燃烧条件下的混沌规律不同。在此基础上，设计了一组混沌吸引子的轨迹演化特征和形态分布特征，用于燃烧状态识别。通过相空间重构对火焰视频的强度序列进行混沌吸引子的重构，从递归图和形态分布中提取量化特征，并将其放入决策树中进行燃烧状态识别。
-** Reconstruction of Temperature Field in Coal-fired Boiler Based on Limited Flame Image Information
+*** Reconstruction of Temperature Field in Coal-fired Boiler Based on Limited Flame Image Information
 本文提出了一种基于改进的双色测温方法的温度场重构方法。该方法利用BP神经网络建立了改进的双色测温方法中火焰图像灰度值与待解参数之间的数学模型。然后，根据火焰图像的灰度值重建炉膛内的温度场。该方法解决了传统炉膛温度场重构算法无法获得准确辐射能量数据的问题，简化了该方法的测量和计算，提高了精度。
-* read
