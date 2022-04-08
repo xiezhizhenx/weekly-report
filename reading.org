@@ -183,7 +183,7 @@ Damköhler number：用来确定扩散速率或反应速率对于定义在感兴
 * Golgiyaz S ,  Talu M F ,  Daskin M , et al. Estimation of excess air coefficient on coal combustion processes via gauss model and artificial neural network[J].  2021.
 [[cite:&Golgiyaz-et.al._2021]]
 ** 问题
-火焰图像可以立即反映燃烧室的当前状态，因此从燃烧控制的角度来看，火焰图像是至关重要的，因为它减少了燃烧过程的结构滞后时间，因为滞后时间对闭环系统的抗扰性能有不利影响。
+火焰图像可以立即反映燃烧室的当前状态，因此从燃烧控制的角度来看，火焰图像是至关重要的，因为它减少了燃烧过程的结构滞后时间，而滞后时间对闭环系统的抗扰性能有不利影响。
 
 当对火焰图像的研究进行总体评价时，已经提出的特征提取方法不足以确定燃烧特性。本文提出了一种火焰图像与过量空气系数(\lambda)之间的关系模型。
 ** 方法
